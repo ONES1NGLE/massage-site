@@ -10,19 +10,19 @@ const Reviews = () => {
 
   // Массив путей к изображениям отзывов
   const reviewImages = [
-    '/src/images/reviews/reviews_1.jpg',
-    'src/images/reviews/reviews_2.jpg',
-    'src/images/reviews/reviews_3.jpg',
-    'src/images/reviews/reviews_4.jpg',
-    'src/images/reviews/reviews_5.jpg',
-    'src/images/reviews/reviews_6.jpg',
-    'src/images/reviews/reviews_7.jpg',
-    'src/images/reviews/reviews_8.jpg',
-    'src/images/reviews/reviews_9.jpg',
-    'src/images/reviews/reviews_10.jpg',
-    'src/images/reviews/reviews_11.jpg',
-    'src/images/reviews/reviews_12.jpg',
-    'src/images/reviews/reviews_13.jpg'
+    '/images/reviews_1.jpg',
+    '/images/reviews_2.jpg',
+    '/images/reviews_3.jpg',
+    '/images/reviews_4.jpg',
+    '/images/reviews_5.jpg',
+    '/images/reviews_6.jpg',
+    '/images/reviews_7.jpg',
+    '/images/reviews_8.jpg',
+    '/images/reviews_9.jpg',
+    '/images/reviews_10.jpg',
+    '/images/reviews_11.jpg',
+    '/images/reviews_12.jpg',
+    '/images/reviews_13.jpg'
   ];
 
   const nextSlide = () => {
