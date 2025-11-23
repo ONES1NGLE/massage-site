@@ -1,184 +1,178 @@
 // components/Services.jsx
-import React, { useState } from 'react';
-import { X, Clock, DollarSign, Info } from 'lucide-react';
+import { Clock, DollarSign, Info, X } from 'lucide-react'
+import { useState } from 'react'
 
 const Services = () => {
-  const [selectedService, setSelectedService] = useState(null);
+	const [selectedService, setSelectedService] = useState(null)
 
-  const services = [
-    {
-      title: 'Классический массаж',
-      description: 'Глубокая проработка мышц, снятие напряжения и усталости',
-      price: '3000₽',
-      duration: '60 мин',
-      fullDescription: 'Классический массаж — это проверенная временем техника, направленная на глубокую проработку всех групп мышц. Во время сеанса используются различные приёмы: поглаживание, растирание, разминание и вибрация.',
-      benefits: [
-        'Снятие мышечного напряжения и спазмов',
-        'Улучшение кровообращения и лимфотока',
-        'Устранение болей в спине и суставах',
-        'Повышение общего тонуса организма',
-        'Глубокое расслабление и снятие стресса'
-      ],
-      process: 'Сеанс начинается с лёгких поглаживающих движений для разогрева мышц. Затем мастер переходит к более интенсивной проработке проблемных зон. Завершается массаж успокаивающими приёмами для закрепления эффекта.'
-    },
-    {
-      title: 'Энергетический массаж',
-      description: 'Балансировка энергетических центров, работа с чакрами',
-      price: '4000₽',
-      duration: '90 мин',
-      fullDescription: 'Энергетический массаж сочетает в себе классические техники и работу с энергетическими центрами тела. Это глубокая практика, направленная на восстановление энергетического баланса и гармонизацию внутреннего состояния.',
-      benefits: [
-        'Балансировка энергетических центров (чакр)',
-        'Снятие энергетических блоков',
-        'Восстановление внутренней гармонии',
-        'Улучшение эмоционального состояния',
-        'Повышение жизненной энергии и тонуса'
-      ],
-      process: 'Сеанс проходит в спокойной атмосфере с использованием ароматических масел и расслабляющей музыки. Мастер работает не только с физическим телом, но и с энергетическими каналами, помогая восстановить естественный поток энергии.'
-    },
-    {
-      title: 'Массаж лица и головы',
-      description: 'Омоложение, снятие стресса, улучшение цвета лица',
-      price: '2500₽',
-      duration: '45 мин',
-      fullDescription: 'Массаж лица и головы — это деликатная техника, которая помогает не только расслабиться, но и заметно улучшить состояние кожи. Воздействие на биологически активные точки способствует омоложению и улучшению цвета лица.',
-      benefits: [
-        'Улучшение цвета и тонуса кожи лица',
-        'Разглаживание мелких морщин',
-        'Снятие напряжения с мышц лица и шеи',
-        'Устранение головных болей',
-        'Глубокое расслабление и улучшение сна'
-      ],
-      process: 'Массаж начинается с очищения кожи и нанесения специального масла. Мастер деликатно прорабатывает все зоны лица, шеи и волосистой части головы, уделяя особое внимание точкам напряжения. Сеанс завершается успокаивающей маской.'
-    }
-  ];
+	const services = [
+		{
+			title: 'Индивидуальный холистический массаж',
+			description: 'Сакральная практика осознанного взаимодействия, направленная на восстановление внутреннего потока жизни и гармонизацию энергии.',
+			price: '10 000₽', // Укажите актуальную цену
+			duration: '90 мин',
+			fullDescription: '«Интегративное прикосновение» — это не просто массаж, а сакральная практика осознанного взаимодействия, в которой тело воспринимается как живой проводник энергии и памяти. Каждое прикосновение — это диалог, направленный не только на расслабление, но и на восстановление внутреннего потока жизни. Суть метода — помочь человеку выйти за пределы накопленных напряжений, вернуть ощущение лёгкости, устойчивости и связи с самим собой. Через мягкие, ритмичные и глубокие движения активизируются естественные процессы саморегуляции и энергетического восстановления.',
+			benefits: ['Глубокое расслабление и обновление тела', 'Внутренняя ясность и лёгкость', 'Восстановление энергетического тонуса', 'Чувство устойчивости, целостности и присутствия', 'Выход за пределы накопленных психофизических напряжений'],
+			process: 'Метод объединяет древние и современные подходы, подбираемые индивидуально под состояние и запрос человека. В работе используются: Биоэнерготерапия и ладание (выравнивание поля); Телесно-ориентированная психология (работа с эмоциональными зажимами); Остеопрактика и шиацу (мягкое воздействие на структуру); Хиромассаж и нейрорелаксация (глубокое расслабление нервной системы); Access Bars и другие энергетические техники.',
+		},
+		{
+			title: 'Энергомассаж',
+			description: 'Тонкая, бесконтактная работа с эмоциональной и сенсорной оболочкой, направленная на восстановление баланса и запуск самоисцеления.',
+			price: '7000₽', // Укажите актуальную цену
+			duration: '60 мин',
+			fullDescription:
+				'Биоэнерготерапия афферентного поля — это тонкая работа с эмоциональной и сенсорной оболочкой человека, той частью энергетической структуры, которая отвечает за восприятие, чувствительность и эмоциональный отклик. Через мягкие волновые движения и направленное внимание специалист работает с телом на уровне вибраций и тонких импульсов, не касаясь физически, но запуская процессы саморегуляции и естественного исцеления. Процедура позволяет телу расслабиться, сознанию — отпустить накопленные переживания, а внутреннему пространству — наполниться ощущением тишины и лёгкости. При необходимости работа включает очищение и выравнивание чакральной системы (психоэмоциональных центров), что помогает восстановить баланс между телом, эмоциями и разумом.',
+			benefits: ['Гармонизация общего состояния, выравнивание эмоционального фона', 'Снятие мышечных, психосоматических и энергетических зажимов', 'Снижение уровня тревожности и внутреннего напряжения', 'Улучшение качества сна, повышение уровня энергии', 'Восстановление контакта с телом и ощущение «заземлённости»', 'Очищение тела эмоций от следов прошлых переживаний'],
+			process: 'Сеанс проходит в состоянии глубокого расслабления. Мастер работает с афферентным слоем поля (расположенным на расстоянии 5–15 см от тела), используя: мягкие биоэнергетические касания (чаще — бесконтактные движения рук); направленное дыхание и настройку частоты афферентных импульсов; работу с телом эмоций через дыхание, голос и визуализацию; технику перепрошивки эмоционального сигнала (снятие следов стресса с энергетических центров); восстановление магнитной симметрии поля (выравнивание вибраций).',
+		},
+		{
+			title: 'Access Bars',
+			description: 'Методика нейросоматической коррекции для снятия психофизических блоков, головных болей и перенастройки внутренних установок.',
+			price: '6000₽', // Укажите актуальную цену
+			duration: '60 мин',
+			fullDescription:
+				'Access Bars — это мягкая техника работы с головой, основанная на активации 32 ключевых зон, связанных с эмоциями и психоэмоциональными состояниями. Через лёгкие прикосновения снимается напряжение, гармонизируется нервная система и запускаются естественные механизмы восстановления. Это методика нейросоматической коррекции, основанная на целенаправленной стимуляции краниальных зон. Локальное воздействие улучшает микроциркуляцию, снижает гипертонус мышц и активирует парасимпатические механизмы регуляции. Главный эффект — перестройка внутренних установок, освобождение пространства для новых решений и ощущение внутреннего равновесия.',
+			benefits: ['Снимает головные боли и мышечные зажимы', 'Улучшает качество сна и глубину отдыха', 'Снижает уровень стресса и тревожности', 'Расслабляет нервную систему и дарит ощущение внутреннего покоя', 'Улучшает концентрацию, память и ясность мышления', 'Возвращает чувство лёгкости и энергии'],
+			process: 'Процедура включает мягкую активацию 32 ключевых зон на голове (Access Bars). На уровне центральной нервной системы фиксируется снижение активности гипоталамо-гипофизарно-адреналовой оси (уменьшается уровень кортизола), нормализуется баланс медиаторных систем (серотонинергической и дофаминергической). В результате снижается тревожность, уменьшается частота головных болей напряжения и стабилизируется психоэмоциональное состояние.',
+		},
+		{
+			title: 'Управляемая медитация (Smriti meditation)',
+			description: 'Мягкое, негипнотическое путешествие внутрь себя для освобождения глубинных причин психосоматических симптомов и внутренних конфликтов.',
+			price: '8000₽', // Укажите актуальную цену
+			duration: '120 мин',
+			fullDescription: 'Управляемая медитация — это мягкое путешествие внутрь себя, которое помогает увидеть и освободить глубинные причины психосоматических симптомов, эмоциональных блоков и внутренних конфликтов. Во время сессии вы в безопасном состоянии осознанности исследуете своё внутреннее пространство, а терапевт бережно направляет процесс — без гипноза, без навязывания, только через присутствие и доверие телу. Метод Smriti meditation («Смрити» — «память») разработан профессором К. В. Дилипкумаром (Индия). Практику ведёт сертифицированный специалист, ученица профессора.',
+			benefits: ['Освобождение от психосоматических и эмоциональных напряжений', 'Проживание и интеграция подавленных переживаний', 'Восстановление связи между телом, чувствами и сознанием', 'Понимание своих истинных целей и смыслов', 'Получение ответов на внутренние вопросы', 'Раскрытие интуиции и состояния внутренней ясности'],
+			process: 'Сеанс проходит в состоянии глубокой осознанности и покоя. Терапевт бережно направляет внимание клиента на внутреннее пространство и телесные ощущения, помогая без сопротивления увидеть и отпустить накопленные напряжения. Практика ведется по методу Smriti meditation. Работа происходит только через присутствие и доверие, без использования гипнотических техник.',
+		},
+		{
+			title: 'АлгоРитм OS — персональный код целостности',
+			description: 'Мягкое обновление, глубокая перезагрузка. Индивидуальная практика осознанной трансформации, которая активирует саморегуляцию.',
+			price: '15 000₽',
+			duration: '180 мин',
+			fullDescription: '«АлгоРитм OS» — это индивидуальная практика осознанной трансформации. Это не просто формат отдыха, это ваше новое звучание. Процедура помогает выйти из внутреннего шума в ясность, из напряжения — в спокойную силу. Завершается сессия телесным комплексом (Модуль Harmony+), который активирует саморегуляцию и внутренний ритм, возвращая вас к себе живому.',
+			benefits: ['Выход из «вечно на взводе» в зону покоя и настроенности', 'Переход из ментального хаоса в структурированную внутреннюю систему', 'Из расфокусировки — в ощущение целостности и живой энергии', 'Мягкое обновление и глубокая перезагрузка', 'Активация внутреннего ритма и саморегуляции'],
+			process: 'Программа включает три основных компонента: Cognitive Reboot (обновление установок и ментальных сценариев); Emotional Alchemy (медитативные практики для трансформации эмоций); Somatic Intelligence (телесные методики, пробуждающие легкость и радость). Сессия длится 3 часа и завершается модулем Harmony+.',
+		},
+	]
 
-  const scrollToSection = (id, serviceName = null) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-      
-      // Передаём выбранную услугу в форму через custom event
-      if (serviceName) {
-        setTimeout(() => {
-          window.dispatchEvent(new CustomEvent('selectService', { detail: serviceName }));
-        }, 500);
-      }
-    }
-  };
+	const scrollToSection = (id, serviceName = null) => {
+		const element = document.getElementById(id)
+		if (element) {
+			element.scrollIntoView({ behavior: 'smooth' })
 
-  return (
-    <>
-      <section id="services" className="py-20 px-4 bg-white">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-light text-gray-800 mb-4">Услуги</h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
-              Индивидуальный подход к каждому клиенту. Все техники массажа направлены на восстановление и гармонизацию
-            </p>
-          </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {services.map((service, index) => (
-              <div key={index} className="bg-gradient-to-br from-amber-50 to-stone-100 rounded-2xl p-8 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-                <div className="flex justify-between items-start mb-4">
-                  <h3 className="text-xl font-medium text-gray-800">{service.title}</h3>
-                  <span className="text-sm text-amber-800 bg-amber-100 px-3 py-1 rounded-full">{service.duration}</span>
-                </div>
-                <p className="text-gray-600 mb-6 leading-relaxed">{service.description}</p>
-                <div className="flex justify-between items-center mb-4">
-                  <span className="text-2xl font-light text-amber-800">{service.price}</span>
-                  <button 
-                    onClick={() => {
-                      scrollToSection('contact', service.title);
-                    }}
-                    className="text-amber-700 hover:text-amber-800 font-medium"
-                  >
-                    Записаться →
-                  </button>
-                </div>
-                <button
-                  onClick={() => setSelectedService(service)}
-                  className="w-full mt-4 px-4 py-2 border-2 border-amber-700 text-amber-700 rounded-xl hover:bg-amber-700 hover:text-white transition flex items-center justify-center gap-2"
-                >
-                  <Info className="w-4 h-4" />
-                  Подробнее
-                </button>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+			// Передаём выбранную услугу в форму через custom event
+			if (serviceName) {
+				setTimeout(() => {
+					window.dispatchEvent(new CustomEvent('selectService', { detail: serviceName }))
+				}, 500)
+			}
+		}
+	}
 
-      {/* Модальное окно */}
-      {selectedService && (
-        <div className="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 flex items-center justify-center p-4 overflow-y-auto">
-          <div className="bg-white rounded-3xl shadow-2xl max-w-2xl w-full my-8 relative animate-fadeIn">
-            {/* Заголовок */}
-            <div className="sticky top-0 bg-gradient-to-r from-amber-100 to-stone-100 p-6 rounded-t-3xl border-b border-amber-200">
-              <button
-                onClick={() => setSelectedService(null)}
-                className="absolute top-4 right-4 w-10 h-10 bg-white rounded-full flex items-center justify-center hover:bg-gray-100 transition"
-              >
-                <X className="w-6 h-6 text-gray-600" />
-              </button>
-              <h3 className="text-2xl md:text-3xl font-light text-gray-800 pr-12">{selectedService.title}</h3>
-              <div className="flex gap-4 mt-4">
-                <div className="flex items-center gap-2 text-amber-800">
-                  <Clock className="w-5 h-5" />
-                  <span className="text-sm font-medium">{selectedService.duration}</span>
-                </div>
-                <div className="flex items-center gap-2 text-amber-800">
-                  <DollarSign className="w-5 h-5" />
-                  <span className="text-sm font-medium">{selectedService.price}</span>
-                </div>
-              </div>
-            </div>
+	return (
+		<>
+			<section id='services' className='py-20 px-4 bg-white'>
+				<div className='max-w-7xl mx-auto'>
+					<div className='text-center mb-16'>
+						<h2 className='text-3xl md:text-4xl font-light text-gray-800 mb-4'>Услуги</h2>
+						<p className='text-gray-600 max-w-2xl mx-auto'>Индивидуальный подход к каждому клиенту. Все техники массажа направлены на восстановление и гармонизацию</p>
+					</div>
+					<div className='grid md:grid-cols-2 lg:grid-cols-3 gap-8'>
+						{services.map((service, index) => (
+							<div key={index} className='h-full flex flex-col justify-between bg-gradient-to-br from-amber-50 to-stone-100 rounded-2xl p-8 hover:shadow-xl transition-all duration-300 hover:-translate-y-1'>
+								<div className='flex justify-between items-start mb-4'>
+									<h3 className='text-xl font-medium text-gray-800'>{service.title}</h3>
+									<span className='bg-amber-100 text-amber-800 rounded-full px-3 py-1 text-sm w-auto text-center whitespace-nowrap'>{service.duration}</span>
+								</div>
+								<p className='text-gray-600 mb-6 leading-relaxed'>{service.description}</p>
+								<div className='flex justify-between items-center mb-4'>
+									<span className='text-2xl font-light text-amber-800'>{service.price}</span>
+									<button
+										onClick={() => {
+											scrollToSection('contact', service.title)
+										}}
+										className='text-amber-700 hover:text-amber-800 font-medium'
+									>
+										Записаться →
+									</button>
+								</div>
+								<button onClick={() => setSelectedService(service)} className='w-full mt-4 px-4 py-2 border-2 border-amber-700 text-amber-700 rounded-xl hover:bg-amber-700 hover:text-white transition flex items-center justify-center gap-2'>
+									<Info className='w-4 h-4' />
+									Подробнее
+								</button>
+							</div>
+						))}
+					</div>
+				</div>
+			</section>
 
-            {/* Контент */}
-            <div className="p-6 md:p-8 space-y-6 max-h-[60vh] overflow-y-auto">
-              {/* Описание */}
-              <div>
-                <h4 className="text-lg font-medium text-gray-800 mb-3">Описание</h4>
-                <p className="text-gray-600 leading-relaxed">{selectedService.fullDescription}</p>
-              </div>
+			{/* Модальное окно */}
+			{selectedService && (
+				<div className='fixed inset-0 bg-black/50 backdrop-blur-sm z-50 flex items-center justify-center p-4 overflow-y-auto'>
+					<div className='bg-white rounded-3xl shadow-2xl max-w-2xl w-full my-8 relative animate-fadeIn'>
+						{/* Заголовок */}
+						<div className='sticky top-0 bg-gradient-to-r from-amber-100 to-stone-100 p-6 rounded-t-3xl border-b border-amber-200'>
+							<button onClick={() => setSelectedService(null)} className='absolute top-4 right-4 w-10 h-10 bg-white rounded-full flex items-center justify-center hover:bg-gray-100 transition'>
+								<X className='w-6 h-6 text-gray-600' />
+							</button>
+							<h3 className='text-2xl md:text-3xl font-light text-gray-800 pr-12'>{selectedService.title}</h3>
+							<div className='flex gap-4 mt-4'>
+								<div className='flex items-center gap-2 text-amber-800'>
+									<Clock className='w-5 h-5' />
+									<span className='text-sm font-medium'>{selectedService.duration}</span>
+								</div>
+								<div className='flex items-center gap-2 text-amber-800'>
+									<DollarSign className='w-5 h-5' />
+									<span className='text-sm font-medium'>{selectedService.price}</span>
+								</div>
+							</div>
+						</div>
 
-              {/* Польза */}
-              <div>
-                <h4 className="text-lg font-medium text-gray-800 mb-3">Польза от процедуры</h4>
-                <ul className="space-y-2">
-                  {selectedService.benefits.map((benefit, index) => (
-                    <li key={index} className="flex items-start gap-3">
-                      <div className="w-2 h-2 bg-amber-600 rounded-full mt-2 flex-shrink-0"></div>
-                      <span className="text-gray-600">{benefit}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
+						{/* Контент */}
+						<div className='p-6 md:p-8 space-y-6 max-h-[60vh] overflow-y-auto'>
+							{/* Описание */}
+							<div>
+								<h4 className='text-lg font-medium text-gray-800 mb-3'>Описание</h4>
+								<p className='text-gray-600 leading-relaxed'>{selectedService.fullDescription}</p>
+							</div>
 
-              {/* Как проходит */}
-              <div>
-                <h4 className="text-lg font-medium text-gray-800 mb-3">Как проходит сеанс</h4>
-                <p className="text-gray-600 leading-relaxed">{selectedService.process}</p>
-              </div>
-            </div>
+							{/* Польза */}
+							<div>
+								<h4 className='text-lg font-medium text-gray-800 mb-3'>Польза от процедуры</h4>
+								<ul className='space-y-2'>
+									{selectedService.benefits.map((benefit, index) => (
+										<li key={index} className='flex items-start gap-3'>
+											<div className='w-2 h-2 bg-amber-600 rounded-full mt-2 flex-shrink-0'></div>
+											<span className='text-gray-600'>{benefit}</span>
+										</li>
+									))}
+								</ul>
+							</div>
 
-            {/* Кнопка записи */}
-            <div className="sticky bottom-0 bg-white p-6 border-t border-gray-200 rounded-b-3xl">
-              <button
-                onClick={() => {
-                  setSelectedService(null);
-                  scrollToSection('contact', selectedService.title);
-                }}
-                className="w-full px-8 py-4 bg-amber-700 text-white rounded-xl hover:bg-amber-800 transition shadow-lg hover:shadow-xl"
-              >
-                Записаться на процедуру
-              </button>
-            </div>
-          </div>
-        </div>
-      )}
-    </>
-  );
-};
+							{/* Как проходит */}
+							<div>
+								<h4 className='text-lg font-medium text-gray-800 mb-3'>Как проходит сеанс</h4>
+								<p className='text-gray-600 leading-relaxed'>{selectedService.process}</p>
+							</div>
+						</div>
 
-export default Services;
+						{/* Кнопка записи */}
+						<div className='sticky bottom-0 bg-white p-6 border-t border-gray-200 rounded-b-3xl'>
+							<button
+								onClick={() => {
+									setSelectedService(null)
+									scrollToSection('contact', selectedService.title)
+								}}
+								className='w-full px-8 py-4 bg-amber-700 text-white rounded-xl hover:bg-amber-800 transition shadow-lg hover:shadow-xl'
+							>
+								Записаться на процедуру
+							</button>
+						</div>
+					</div>
+				</div>
+			)}
+		</>
+	)
+}
+
+export default Services

@@ -1,7 +1,7 @@
 // components/Hero.jsx
 import { Heart, MessageCircle, Send, Users } from 'lucide-react'
 import { contacts, siteData } from '../config/contacts'
-import portfolioMe from '../images/portfolio_me.jpg';
+import portfolioMe from '../images/portfolio_me.jpg'
 
 const Hero = () => {
 	return (
@@ -9,12 +9,11 @@ const Hero = () => {
 			<div className='max-w-7xl mx-auto'>
 				<div className='grid md:grid-cols-2 gap-12 items-center'>
 					<div className='space-y-6'>
-						<div className='inline-block px-4 py-2 bg-amber-100 text-amber-800 rounded-full text-sm'>✨ Сертифицированный специалист</div>
+						<div className='inline-block px-4 py-2 bg-amber-100 text-amber-800 rounded-full text-sm'>✨ Мастер-гармонизатор</div>{' '}
 						<h1 className='text-4xl md:text-5xl lg:text-6xl font-light text-gray-800 leading-tight'>
-							Гармония тела <br />и духа
-						</h1>
-						<p className='text-lg text-gray-600 leading-relaxed'>Профессиональный энергомассаж для восстановления баланса, снятия стресса и обретения внутренней гармонии</p>
-
+							Тело, Энергия, <br />и Сознание{' '}
+						</h1>{' '}
+						<p className='text-lg text-gray-600 leading-relaxed'>Холистическая практика, объединяющая психосоматику, телесную терапию и биоэнергетику для освобождения от блоков и восстановления внутреннего потока жизни.</p>
 						{/* Кнопки быстрой связи */}
 						<div className='flex flex-wrap gap-3 pt-4'>
 							<a href={`https://wa.me/${contacts.whatsapp}`} target='_blank' rel='noopener noreferrer' className='px-6 py-3 bg-green-500 text-white rounded-full hover:bg-green-600 transition shadow-lg hover:shadow-xl flex items-center gap-2'>
@@ -26,7 +25,6 @@ const Hero = () => {
 								Telegram
 							</a>
 						</div>
-
 						<div className='flex gap-8 pt-6'>
 							<div className='flex items-center gap-2'>
 								<Users className='w-5 h-5 text-amber-700' />
