@@ -18,7 +18,7 @@ export const siteData = {
   title: 'Энергомассаж',
   tagline: 'Гармония тела и духа',
   stats: {
-    clients: '100+',
+    clients: '500+',
     experience: '7 лет'
   }
 };
