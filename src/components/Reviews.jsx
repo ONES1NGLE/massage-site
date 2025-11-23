@@ -78,7 +78,7 @@ const Reviews = () => {
     <section id="reviews" className="py-20 px-4 bg-gradient-to-b from-white to-amber-50">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-light text-gray-800 mb-4">Отзывы клиентов</h2>
+          <h2 className="text-3xl md:text-4xl font-light text-gray-800 mb-4">Отзывы</h2>
           <p className="text-gray-600">Реальные отзывы людей, которые уже посетили мои сеансы</p>
         </div>
 
