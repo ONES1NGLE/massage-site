@@ -34,22 +34,16 @@ git clone https://github.com/ONES1NGLE/massage-site.git
 cd massage-site
 
 ### 2. Установка зависимостей
-# npm
-npm install
 
-# или yarn
+npm install
 yarn install
 
 ### 3. Запуск сервера разработки 
-# режим разработки
-npm run dev
 
-# или
+npm run dev
 yarn dev
 
 ### 4. Сборка для продакшена 
-# оптимизированная сборка в папку dist
-npm run build
 
-# или
+npm run build
 yarn build
