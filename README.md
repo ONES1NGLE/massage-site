@@ -1,16 +1,55 @@
-# React + Vite
+# ✨ Massage Site — современный адаптивный сайт-портфолио массажиста
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Этот репозиторий содержит исходный код для современного, адаптивного сайта-портфолио, предназначенного для демонстрации услуг массажиста или спа-салона.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🌟 Ключевые особенности
 
-## React Compiler
+- **Современный дизайн** — эстетичный, чистый и удобный интерфейс.
+- **Адаптивный макет** — корректная работа на телефонах, планшетах и ПК.
+- **Секции услуг** — детальное описание видов массажа и актуальных цен.
+- **Форма обратной связи** — быстрый способ записаться или задать вопрос.
+- **Раздел “Обо мне / Наши специалисты”** — информация о мастере и его квалификации.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Технологический стек
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+| Категория | Технология     | Описание |
+|----------|----------------|----------|
+| Фронтенд | **React**       | Библиотека для построения UI |
+| Сборка    | **Vite**        | Быстрая сборка с мгновенной перезагрузкой |
+| Стили     | **Tailwind CSS**| Утилитарный CSS-фреймворк |
+| Язык      | **JavaScript (ES6+)** | Основной язык разработки |
+
+---
+
+## 🚀 Установка и запуск
+
+### 1. Клонирование репозитория
+
+bash
+git clone https://github.com/ONES1NGLE/massage-site.git
+cd massage-site
+
+### 2. Установка зависимостей
+# npm
+npm install
+
+# или yarn
+yarn install
+
+### 3. Запуск сервера разработки 
+# режим разработки
+npm run dev
+
+# или
+yarn dev
+
+### 4. Сборка для продакшена 
+# оптимизированная сборка в папку dist
+npm run build
+
+# или
+yarn build
