@@ -19,6 +19,6 @@ export const siteData = {
   tagline: 'Гармония тела и духа',
   stats: {
     clients: '500+',
-    experience: '7 лет'
+    experience: '>7 лет'
   }
 };
