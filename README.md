@@ -44,5 +44,5 @@
 
 ### 4. Сборка для продакшена 
 
--npm run build
+-npm run build  
 -yarn build
