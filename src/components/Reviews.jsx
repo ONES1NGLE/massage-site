@@ -10,6 +10,7 @@ const Reviews = () => {
 
   // Массив путей к изображениям отзывов
   const reviewImages = [
+    '/images/reviews_1.jpg',
     '/images/reviews_2.jpg',
     '/images/reviews_3.jpg',
     '/images/reviews_4.jpg',
@@ -19,9 +20,6 @@ const Reviews = () => {
     '/images/reviews_8.jpg',
     '/images/reviews_9.jpg',
     '/images/reviews_10.jpg',
-    '/images/reviews_11.jpg',
-    '/images/reviews_12.jpg',
-    '/images/reviews_13.jpg'
   ];
 
   const nextSlide = () => {
