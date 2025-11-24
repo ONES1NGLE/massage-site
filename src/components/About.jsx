@@ -38,7 +38,7 @@ const About = () => {
 						<div className='space-y-4 pt-4'>
 							{features.map((feature, index) => (
 								<div key={index} className='flex items-start gap-3'>
-									<div className='w-2 h-2 bg-amber-700 rounded-full mt-2'></div>
+									<div className='w-2 h-2 bg-amber-700 rounded-full mt-2 flex-shrink-0'></div>
 									<div>
 										<div className='font-medium text-gray-800'>{feature.title}</div>
 										<div className='text-sm text-gray-600'>{feature.description}</div>
