@@ -29,21 +29,20 @@
 
 ### 1. Клонирование репозитория
 
-bash
-git clone https://github.com/ONES1NGLE/massage-site.git
-cd massage-site
+-git clone https://github.com/ONES1NGLE/massage-site.git
+-cd massage-site
 
 ### 2. Установка зависимостей
 
-npm install
-yarn install
+-npm install
+-yarn install
 
 ### 3. Запуск сервера разработки 
 
-npm run dev
-yarn dev
+-npm run dev
+-yarn dev
 
 ### 4. Сборка для продакшена 
 
-npm run build
-yarn build
+-npm run build
+-yarn build
